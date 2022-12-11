@@ -48,6 +48,7 @@ def beep_alarm():
         if not alarm_mode:
             break
         print("!!!!!!!!!!!!!!!!!!!!!!!")
+        exec(open('notification.py').read())
     alarm = False
 
 while True:
